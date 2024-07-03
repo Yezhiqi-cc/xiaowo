@@ -1,1 +1,1 @@
-console.log("Hello Github Pages");
+console.log("再看让你吃史");
