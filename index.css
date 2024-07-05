@@ -41,3 +41,7 @@ th{
 table{
     border:5px solid gold;
 }
+.b1{
+    font-size: 10px;
+    text-decoration: line-through;
+}
