@@ -1,10 +1,43 @@
 h1 {
-    color: green;
+    color:aquamarine;
+}
+.game{
+    border: 5px;
 }
 li {
-    font-size:50px;
+    color:crimson;
+    font-size:35px;
 }
-body>p>a:hover{
-    font-size:100px;
-    color:black;
+a{
+    color:cadetblue;
+}
+.xttp{
+    height: 400px;
+    width: 767px;
+}
+a:hover{
+    font-size:40px;
+    color:deeppink;
+}
+label{
+    color:blueviolet;
+    font-size:30px;
+}
+*{
+    font-family:"宋体";
+}
+caption{
+    font-size:30px;
+    color:cyan;
+}
+td{
+    font-size: 20px;
+    color:darkgreen;
+}
+th{
+    font-size:20px;
+    color:brown;
+}
+table{
+    border:5px solid gold;
 }
