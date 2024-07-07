@@ -1,28 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>YEZHIQIのWEB</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEZHIQIのWeb</title>
-    <link rel="stylesheet" href="./index.css" type="text/css" />
     <link rel="shortcut icon" href="./resource/33.ico" />
-    <music>
-        <audio autoplay="autoplay" loop="loop" preload="auto" controls="controls" id="不眠之夜">
-            <source src="./resource/张杰,HOYO-MiX - 不眠之夜.mp3" type="audio/mp3" />
-        </audio>
-    </music>
 </head>
-
 <body>
-    <div id="biaotou">
-    <h1>夜之棋的前端实验室</h1>
-    <a href="https://yezhiqi-cc.github.io/xiaowo/" target="夜之棋自创logo"><img src="./resource/11.jpg" id="logo"></a>
-    <input type="image" src="./resource/99.png" id="yyan" onclick="toggleAudio()"/>
-    <script src="./index.js"></script>
+    <div class="btn">
+        <p>👇学习日志👇</p>
     </div>
-    <hr/>
-    <h2>前面的区域以后再来探索吧</h2>
-</body>
+    <div class="header">
+       <a href="https://yezhiqi-cc.github.io/xiaowo/"><img id="logo" src="./re/11.jpg" /></a>
+    </div>
+    <div class="content">
+    
+        <h1 class="avr">YE's Front End Programming Lab</h1>
+    </div>
 
+    <div class="yinyue">
+        <img id="musicico"  class="music" src="./re/唱片.png"  title="不眠之夜" onclick="musiccc()">
+        <audio id="music" autoplay="autoplay" loop="loop" src="./re/张杰,HOYO-MiX - 不眠之夜.mp3" ></audio>
+    </div>
+    <div class="row">
+        <div class="centercolumn">
+            <div class="card">
+
+                <h2 id="biaoti">前端启程</h2><br />
+                <hr />
+                <h4 id="qita">2024 年 7 月 5日</h4>
+
+                <p style="text-indent:2em">文本</p>
+                <p style="text-indent:2em">文本</p>
+                <p style="text-indent:2em">
+                    文本
+                </p>
+                <p style="text-indent:2em">
+                    文本
+                </p>
+                <p style="text-indent:2em">
+                    文本
+                </p>
+                <p style="text-indent:2em">
+                    文本
+                </p>
+            </div>
+            <br /><br />
+            <div class="card">
+                <h2 id="biaoti">今天把这个网站搞了，累成傻狗，休息一天</h2><br />
+                <hr />
+                <h4 id="qita">2024 年 7 月 7日</h4>
+                <p style="text-indent:2em">
+                    文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+
+                </p>
+                <p style="text-indent:2em">
+                    文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                </p>
+                <p style="text-indent:2em">
+                    文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                </p>
+                <p style="text-indent:2em">
+                    “文本”
+                </p>
+                <p style="text-indent:2em">
+                    文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                </p>
+                <p style="text-indent:2em">
+                    文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                    文本文本文本文本文本文本文本文本文本文本文本文本
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+   
+    
+    <br /><br />
+    <button class="bt" onclick="openb()">MY BILIBILI</button>
+    
+    <div class="footer">
+        <br />
+        <p>前面的区域，以后再来探索吧</p><br />
+        <a href="https://yezhiqi-cc.github.io/xiaowo/" target="_blank"><img class="someimg" src="./re/11.jpg" alt="" width="30"></a>
+        <abbr title="vx账号:yezhiqi2038"><img class="someimg" src="./re/weixin.png" alt="" width="30"></abbr>
+        <abbr title="邮箱:1208382819@qq.com"><img class="someimg" src="./re/youxiang.png" alt="" width="30"></abbr>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
 </html>
