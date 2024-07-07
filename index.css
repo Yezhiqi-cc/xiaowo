@@ -1,6 +1,6 @@
 
 * {
-    font-family: "STHupo";
+    font-family: "STXinwei";
     margin: 0px;/*设置四周边距都为0*/
     box-sizing: border-box;/*宽高的设置值包括border等*/
 }
@@ -30,12 +30,14 @@ body {
 
 /*正中间的字*/
 .avr{
+    text-shadow: -1px 1px 0 #ffffff, 1px 1px 0 #ffffff,1px -1px 0 #ffffff,-1px -1px 0 #ffffff;/*这个描边效果还可以*/
+    font-family: "STHupo";
     position: absolute;
     display: flex;
     justify-content: center;
     left: 0;
     right: 0;
-    top: 300px;
+    top: 260px;
     margin: auto;
     bottom: 0;
     color:rgba(50, 49, 50, 0.902);
@@ -48,24 +50,16 @@ audio {
     bottom: 50px;
     right: 0;
 }
-/* 创建三列 本来是想做三列的，后来没做也懒得改了 */
-/* center column */
-.leftcolumn {
-    float: left;
-    width: 10%;
-}
+
 
 .centercolumn {
     margin: auto;
     width: 80%;
-    height:1000px;
+    height:1500px;
     padding: 10px;
     
 }
-.rightcolumn {
-    float: left;
-    width: 10%;
-}
+
 
 /* 文章卡片 */
 .card {
@@ -73,12 +67,16 @@ audio {
     padding: 20px;
     margin-top: 20px;
     border-radius: 50px;
-    
+}
+.card>p{
+    font-size: 22px;
 }
 #biaoti {
+    font-size: 30px;
     text-align: center;
 }
 #qita {
+    font-size: 18px;
     text-align: right;
 }
 /* 列后面清除浮动 */
@@ -131,6 +129,7 @@ img#musicico{
     margin-top: 50px;
 }
 .footer p{
+    font-size: 24px;
     color: rgba(255, 255, 255, 0.799);
 }
 /*中间的字效果*/
@@ -167,3 +166,4 @@ img#musicico{
     margin: auto;  /*使按钮居中*/
     font-size: 20px; /*设置字体大小*/
 }
+
