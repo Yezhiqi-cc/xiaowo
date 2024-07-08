@@ -5,31 +5,38 @@
     <title>YEZHIQIのWEB</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./resource/33.ico" />
+    <link rel="shortcut icon" href="./re/photo/33.ico" />
 </head>
 <body>
-    <continar>
+    <aside>
+        <a class="side" href="#7/5">7月5日</a>
+        <a class="side" href="#7/6">7月6日</a>
+        <a class="side" href="#7/7">7月7日</a>
+        <a class="side" href="#7/8">7月8日</a>
+        <p class="end">前面的区域，以后再来探索吧</p>
+    </aside>
     <div class="btn">
         <p>👇学习日志👇</p>
     </div>
     <div class="header">
-       <a href="https://yezhiqi-cc.github.io/xiaowo/"><img id="logo" src="./re/11.jpg" /></a>
+       <a href="https://yezhiqi-cc.github.io/xiaowo/"><img id="logo" src="./re/photo/11.jpg" /></a>
     </div>
     <div class="content">
         <h1 class="avr">YE's Front End Programming Lab</h1>
     </div>
 
     <div class="yinyue">
-        <img id="musicico"  class="music" src="./re/唱片.png"  title="不眠之夜" onclick="musiccc()">
-        <audio id="music" autoplay="autoplay" loop="loop" src="./re/张杰,HOYO-MiX - 不眠之夜.mp3" ></audio>
+        <img id="musicico"  class="music" src="./re/photo/唱片.png"  title="不眠之夜" onclick="musiccc()"/>
+        <img id="musw"  class="musw" src="./re/photo/qiege.png"  title="切歌" onclick="musw()"/>
+        <audio id="music" autoplay="autoplay" loop="loop" src="./re/song/张杰,HOYO-MiX - 不眠之夜.mp3" ></audio>
     </div>
     <div class="row">
         <div class="centercolumn">
+            <maodian id="7/5"/>
             <div class="card">
-
-                <h2 id="biaoti">前端启程</h2><br />
+                <h2 class="biaoti">前端启程</h2><br />
                 <hr />
-                <h4 id="qita">2024 年 7 月 5日</h4>
+                <h4 class="qita">2024 年 7 月 5日</h4>
 
                 <p style="text-indent:2em">虽然本人堂堂计算机专业，但是居然选了前端而不是后端，可能我还是对纯代码的处理不是太擅长，前端毕竟是有一些可视化地处理，调整起来更有方向感。
                 </p>
@@ -48,11 +55,12 @@
                     总之这一天是我学习前端的第一天，我记得那天这个网页还是关于我的各个游戏和游戏时长的表格......
                 </p>
             </div>
+            <br /><br />
+            <maodian id="7/6"/>
             <div class="card">
-
-                <h2 id="biaoti">兴趣满满</h2><br />
+                <h2 class="biaoti">兴趣满满</h2><br />
                 <hr />
-                <h4 id="qita">2024 年 7 月 6日</h4>
+                <h4 class="qita">2024 年 7 月 6日</h4>
 
                 <p style="text-indent:2em">
                     昨天爆刷慕课网，一下子快通关了，给我整自信了，火速搓个网站出来，今天应该要上点干货了，我也不知道这个网站会被谁看到<huaxian style="text-decoration:line-through 3px">（大概率是被我以一种显摆的态度发给我的友友们）</huaxian>。
@@ -72,12 +80,14 @@
                 <p style="text-indent:2em">
                     然后就是发现，我的网页有了，但是怎么标题旁边没有小图标，但是图标这东西吧，以后可能会涉及到版权之类的，我觉得还是自己做一个吧，然后去捣鼓下载Photosho，自己画一个图标，好潦草，不过有就已经挺帅的了，以后有机会再改吧。
                 </p>
+                
             </div>
             <br /><br />
-            <div class="card">
-                <h2 id="biaoti">今天把这个网站搞了，累成傻狗，休息半天</h2><br />
+            <maodian id="7/7"/>
+            <div class="card" id="c1">
+                <h2 class="biaoti">今天把这个网站搞了，累成傻狗，休息半天</h2><br />
                 <hr />
-                <h4 id="qita">2024 年 7 月 7日</h4>
+                <h4 class="qita">2024 年 7 月 7日</h4>
                 <p style="text-indent:2em">
                     昨天其实把第一天的网页文件推翻了，第一天那个根本一点盒子模型概念都没学，想改也不知道怎么下手，然后昨天搭的那个网站搞了一两个小时也不知道要做什么内容，最后决定做一个记录自己学习过程的日志网站，也算是我自己的实验网站，正如本网页标题“前端实验室”。
                 </p>
@@ -97,18 +107,33 @@
                     初学的章节只有四章，其实挺少的，后面看到有进阶篇就理解了，不过也够用了，java基础理解起来很快，有点语法区别，核心还是函数的调用。最后，那个网站变成了只有三个元素的音乐播放页面。。。而且只有一首，总之那天学了太多东西了，可能对网站的完成度还是太少了。
                 </p>
                 <p style="text-indent:2em">
-                    发给小伙伴们，有些小伙伴没有加速器看不到，而有些直接用手机端点进去之后，页面就破溃的不成样子，虽然我有想过兼容问题，但没想到那么快，然后再去改也不知道怎么调position和float，总之头大大要死，想想其实也没什么内容，干脆再推到一次吧，就有了现在这个网站。
+                    发给小伙伴们，有些小伙伴没有加速器看不到，而有些直接用手机端点进去之后，页面就崩坏的不成样子，虽然我有想过兼容问题，但没想到那么快，然后再去改也不知道怎么调position和float，总之头大大要死，想想其实也没什么内容，干脆再推到一次吧，就有了现在这个网站。
                 </p>
                 <p style="text-indent:2em">
                     事先声明一下，这个网站不是完完全全原创的，算是借了一下模版，偷了个懒，不过我自己也一条条代码看下来，反反复复调试了挺久的，内容都换了一遍（其实就是大修），有一个点击冒爱心的那个函数是真的强，我都没看懂，直接用了。虽然页面表现还能看，但是实际上响应式设计还是要改，总之可以优化的空间很大，这也是我的初衷，我只需要一个大概的框架，不至于让我无从下手。
                 </p>
+                
+            </div>
+            <button id="toggleButton" class="toggle-button">展开阅读全文</button>
+            <br /><br />
+            <maodian id="7/8"/>
+            <div class="card">
+                <h2 class="biaoti">做点优化</h2><br />
+                <hr />
+                <h4 class="qita">2024 年 7 月 8日</h4>
+                <p style="text-indent:2em">
+                    昨天晚上熬夜把文案码完，然后刷手机通宵了，可能是喝了杯咖啡。。。算了，今天吧网站优化一下，做了一个缩起按钮，这个效果还不错诶，以后碰上大段文本可以压缩一下空间。还加了个防误触弹窗，不过是不是该把我的b站稍微完善一下了......
+                </p>
+                <p style="text-indent:2em">今天感觉自己任督二脉打通了啊，做起东西起来顺心如意，你看这个侧边栏多帅，效果非常好啊我感觉，而且用的参数是vmax，带有一定的兼容性，哎，到底还要多久才能把响应式设计学了，我也想在手机上看我的web。。。</p>
+                <p style="text-indent:2em;color:rgba(230, 12, 164, 0.788)">知识点，当使用a链接标签时，如果href属性里面是某个元素的id，则当点击文本时将跳转到id元素所在，一般是置顶，所以最好设置一个空标签用作锚点，也便于设置margin看起来效果更好一点</p>
+                <p style="text-indent:2em">明天加油吧那个代码的笔记模块做了，今天优化的都是想让画面更好看点，看着好看就有自豪感，就有动力继续卷。</p>
             </div>
 
         </div>
 
 
     </div>
-   <!--优化方向：侧边导航条，初步计划按时间引索，代码笔记模块，黑背景的卡片，做个音量调节吧，--> 
+   <!--优化方向：初步计划按时间引索，代码笔记模块，黑背景的卡片，做个音量调节吧,多放几首歌--> 
     
     <br /><br />
     <footer>
@@ -117,12 +142,11 @@
     <div class="footer">
         <br />
         <p>前面的区域，以后再来探索吧</p><br />
-        <a href="https://yezhiqi-cc.github.io/xiaowo/" target="_blank"><img class="someimg" src="./re/11.jpg" alt="" width="30"></a>
-        <abbr title="vx账号:yezhiqi2038"><img class="someimg" src="./re/weixin.png" alt="" width="30"></abbr>
-        <abbr title="邮箱:1208382819@qq.com"><img class="someimg" src="./re/youxiang.png" alt="" width="30"></abbr>
+        <a href="https://yezhiqi-cc.github.io/xiaowo/" target="_blank"><img class="someimg" src="./re/photo/11.jpg" alt="" width="30"></a>
+        <abbr title="vx账号:yezhiqi2038"><img class="someimg" src="./re/photo/weixin.png" alt="" width="30"></abbr>
+        <abbr title="邮箱:1208382819@qq.com"><img class="someimg" src="./re/photo/youxiang.png" alt="" width="30"></abbr>
     </div>
     </footer>
     <script type="text/javascript" src="./index.js"></script>
-</continar>
 </body>
 </html>
