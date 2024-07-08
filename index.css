@@ -7,7 +7,7 @@
 
 body {
     background-color: black;
-    background: url("./re/66.jpg");/*设置背景图片*/
+    background: url("./re/photo/66.jpg");/*设置背景图片*/
     background-repeat: no-repeat;
     background-attachment: fixed;/*设置背景图不随网页滑动而改变*/
     background-size: cover;
@@ -55,7 +55,7 @@ audio {
 .centercolumn {
     margin: auto;
     width: 80%;
-    height:1500px;
+    height:2000px;
     padding: 10px;
     
 }
@@ -63,19 +63,39 @@ audio {
 
 /* 文章卡片 */
 .card {
+    position: relative;
+    max-height: 400px; /* 内容区域最大高度为200px */  
+    overflow: hidden;/* 超出部分隐藏 */  
+    transition: max-height 0.5s ease-in-out; 
     background-color:rgba(255, 255, 255, 0.5);
     padding: 20px;
     margin-top: 20px;
     border-radius: 50px;
 }
+.toggle-button {  
+    border-radius: 20px;
+    display: block;  
+    margin: 5px auto; /* 水平居中显示按钮 */  
+    padding: 10px 20px; /* 按钮的内边距 */  
+    background-color: rgba(255, 255, 255, 0.5);   /* 透明背景 */  
+    border: 2px solid #33b8e1; /* 天蓝色边框 */  
+    color: #33b8e1; /* 天蓝色字体 */  
+    font-size: 16px; /* 字体大小 */  
+    font-weight: bold; /* 加粗字体 */  
+    cursor: pointer; /* 鼠标指针变为手形 */  
+    transition: background-color 0.3s ease; /* 背景颜色过渡效果 */  
+  }  
+  .toggle-button:hover {  
+    color: #48d9e8; /* 鼠标悬停时的背景颜色，带有透明度 */  
+  }
 .card>p{
     font-size: 22px;
 }
-#biaoti {
+.biaoti {
     font-size: 30px;
     text-align: center;
 }
-#qita {
+.qita {
     font-size: 18px;
     text-align: right;
 }
@@ -100,7 +120,14 @@ img#musicico{
 	animation-duration: 3s; 
 	animation-iteration-count: infinite; 
 }
-
+.musw{
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    width: 15px;
+    height: 15px;
+}
 /* 实现动画的旋转 */
 @keyframes music{
 	0%{
@@ -165,5 +192,45 @@ img#musicico{
     margin-bottom: 10px; /*下部外边框距离10像素*/
     margin: auto;  /*使按钮居中*/
     font-size: 20px; /*设置字体大小*/
+}
+/*侧边导航栏*/
+aside{
+    overflow: auto;
+border-radius: 10px;
+height: 30vmax;
+  width: 5vmax;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  right: 15px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 10px 0;
+}
+.side{
+    text-decoration: none;
+    font-family: "华文琥珀";
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.3vmax;
+    padding: 0.6vmax;
+    height: 2vmax;
+    display: block;
+    color: black;
+}
+.end{
+    position: absolute;
+    bottom: 0;
+    font-family: "华文琥珀";
+    display: block;
+    margin: 0.3vmax;
+    padding: 0.6vmax;
+}
+.side:hover{
+    background-color: gainsboro;
+}
+maodian{
+    margin: 10px;
+    padding: 10px;
 }
 
