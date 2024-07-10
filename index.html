@@ -14,6 +14,7 @@
         <a class="side" href="#7/7">7月7日</a>
         <a class="side" href="#7/8">7月8日</a>
         <a class="side" href="#7/9">7月9日</a>
+        <a class="side" href="#7/10">7月10日</a>
         <p class="end">前面的区域，以后再来探索吧</p>
     </aside>
     <div class="btn">
@@ -27,9 +28,9 @@
     </div>
 
     <div class="yinyue">
-        <img id="musicico"  class="music" src="./re/photo/唱片.png"  title="不眠之夜" onclick="musiccc()"/>
-        <img id="musw"  class="musw" src="./re/photo/qiege.png"  title="切歌" onclick="musw()"/>
-        <audio id="music" autoplay="autoplay" loop="loop" src="./re/song/张杰,HOYO-MiX - 不眠之夜.mp3" ></audio>
+        <img id="musicico"  class="music" src="./re/photo/唱片.png"  onclick="musiccc()"/>
+        <img id="musw"  class="musw" src="./re/photo/qiege.png"  title="切歌" onclick="nextMusic()"/>
+        <audio id="music" autoplay="autoplay" src="" ></audio>
     </div>
     <div class="row">
         <div class="centercolumn">
@@ -149,11 +150,27 @@
                 <img src="./re/photo/1cc.png" title="第一次前端任务" id="1cc" class="photo"/>
             </div>
             <button id="toggleButton2" class="toggle-button">展开阅读全文</button>
+            <br /><br />
+            <maodian id="7/10"/>
+            <div class="card">
+                <h2 class="biaoti">米哈游播放器?</h2><br />
+                <hr />
+                <h4 class="qita">2024 年 7 月 10日</h4>
+                <p style="text-indent:2em">
+                    今天终于把这个bgm切换功能搞出来了，幸好前面的模块兼容性够强，不用推翻，总体很顺利，本来一开始想用js数组的，但是效果没出来，最后看到csdn的大佬的方法，虽然也是数组，但是比我的更简洁一点，而且效果更好。
+                </p>
+                <p style="text-indent:2em">然后一口气塞了超级无敌多HOYO-MIX的歌，米卫兵出列！我觉得这个网页就快被我做成米哈游播放器了，要不过段时间再加个视频功能？</p>
+                <p style="text-indent:2em">要是这个网站杀青了，有可能不更新了（应该不会吧），那我应该是去搞别的网站了，总感觉我像在写电子日记一样，像和自己对话，应该也不会有人一字一句看下来，十年后留给自己考古罢了。</p>
+                <p style="text-indent:2em">那个慕课网进阶，写下来感觉后面的东西都是你要用的时候直接去查会快，记我估计是记不住的，settime,date,和一些getelement的方法，有点提升我感觉，按tagname和name查找时会返回数组，也就是说有些element可以设置name原宿然后统一修改，不用一个个对着id改，说不定我可以改一下那个展开按钮。</p>
+                <p style="text-indent:2em;color:rgba(230, 12, 164, 0.788)"></p>
+                <p style="text-indent:2em"></p>
+                
+            </div>
         </div>
 
 
     </div>
-   <!--优化方向：初步计划按时间引索，代码笔记模块，黑背景的卡片，,多放几首歌--> 
+   <!--优化方向：初步计划按时间引索，代码笔记模块，黑背景的卡片，视频，实时时间条--> 
     
     <br /><br />
     <footer>
