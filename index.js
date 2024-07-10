@@ -65,6 +65,12 @@
             }
         })(window, document);
 
+
+
+
+
+
+
 //打开b站
 function openb(){
     var op = confirm("是否跳转到B站个人空间?")
@@ -73,30 +79,7 @@ function openb(){
   }
 
 }
-let mucics = document.getElementById('音乐');
-document.body.addEventListener('mousemove', function() {
-        setTimeout(() => {
-            mucics.play();
-        }, 2000);
-    }, false);
-    // 动画旋转
-var music = document.getElementById('music')    //获取音乐
-var musicico = document.getElementById('musicico')   //获取音乐图标
-var tem = true  //设置一个变量，用来控制音乐是否在播放。
-document.getElementById("music").volume = 0.5;//设置音量大小
-//定义一个函数，当用户单击的时候触发这个函数，从而实现音乐的暂停与播放。
-function musiccc(){
-	//tem用来控制音乐当前是否在播放。true代表音乐正在播放，false代表音乐当前正在处于暂停的状态。
-	if(tem == false){
-		music.play()  //播放音乐
-		tem = true  
-		document.getElementById('musicico').style.animationPlayState = 'running'  //播放音乐图标
-	}else{
-		music.pause()  //暂停音乐
-		tem = false
-		document.getElementById('musicico').style.animationPlayState = 'paused'  //暂停音乐图标
-	}
-}
+
 document.getElementById('toggleButton1').addEventListener('click',  
     function() {  
         // 获取ID为'content'的元素，通常是一个包含文本或其他内容的容器  
@@ -137,6 +120,65 @@ document.getElementById('toggleButton1').addEventListener('click',
                 this.textContent = '收起'; // 按钮文本改为“查看全文”    
             }  
         });
-    function musw(){
         
-    }
+    let mucics = document.getElementById('音乐');
+document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+    // 动画旋转
+var music = document.getElementById('music')    //获取音乐
+var musicico = document.getElementById('musicico')   //获取音乐图标
+var tem = true  //设置一个变量，用来控制音乐是否在播放。
+document.getElementById("music").volume = 0.5;//设置音量大小
+//定义一个函数，当用户单击的时候触发这个函数，从而实现音乐的暂停与播放。
+function musiccc(){
+	//tem用来控制音乐当前是否在播放。true代表音乐正在播放，false代表音乐当前正在处于暂停的状态。
+	if(tem == false){
+		music.play()  //播放音乐
+		tem = true  
+		document.getElementById('musicico').style.animationPlayState = 'running'  //播放音乐图标
+	}else{
+		music.pause()  //暂停音乐
+		tem = false
+		document.getElementById('musicico').style.animationPlayState = 'paused'  //暂停音乐图标
+	}
+}
+        function nextMusic(){
+            if (++i>songs.length-1) {
+                i=0;
+            }
+            let song = songs[i];
+            music.src = rootUrl + song;
+            music.play();
+        }
+    let rootUrl = './re/song/';
+    let isPlaying = true;
+    let songs = [
+    'HOYO-MiX - 星穹铁道 Star Rail.mp3',
+    'HOYO-MiX - 盐渍月亮 Salty Moon.mp3',
+    '张杰,HOYO-MiX - 不眠之夜.mp3',
+    'HOYO-MiX,优素Yusuf - 水龙吟 Samudrartha.mp3',
+    'HOYO-MiX,Jonathan Steingard - 野火 Wildfire.mp3',
+    '三Z-STUDIO,HOYO-MiX - 覆灭重生 Come Alive.mp3',
+    '知更鸟,HOYO-MiX,Chevy - 希望有羽毛和翅膀.mp3',
+    '知更鸟,HOYO-MiX,Chevy - 在银河中孤独摇摆.mp3',
+    '周深 - Rubia.mp3', 
+    '阿云嘎,HOYO-MiX - Regression.mp3',
+    '黄霄雲,HOYO-MiX - ReOracle.mp3',
+    '袁娅维TIA RAY - Starfall.mp3',
+    '陈致逸,HOYO-MiX - 皎洁的笑颜 Moonlike Smile.mp3',
+    'HOYO-MiX - 众水之诗 Ballad of Many Waters.mp3',
+    'HOYO-MiX - 死兆将至 Death Approaches.mp3',
+    'HOYO-MiX - 你的颜色 Your Color.mp3',
+    'HOYO-MiX - 骑士文学 Chivalric Romances.mp3',
+];
+    
+    let i = 0;
+    music.src = rootUrl + songs[i];
+    music.addEventListener('ended', function () {  
+        i++
+        music.src = rootUrl + songs[i];//换地址
+        music.play();
+    }, false);
