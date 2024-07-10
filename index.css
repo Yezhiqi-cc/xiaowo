@@ -55,7 +55,7 @@ audio {
 .centercolumn {
     margin: auto;
     width: 80%;
-    height:3000px;
+    height:250vmax;
     padding: 10px;
     
 }
@@ -64,7 +64,7 @@ audio {
 /* 文章卡片 */
 .card {
     position: relative;
-    max-height: 300px; 
+    max-height: 400px; 
     overflow: hidden;/* 超出部分隐藏 */  
     transition: max-height 0.5s ease-in-out; 
     background-color:rgba(255, 255, 255, 0.5);
@@ -195,9 +195,9 @@ img#musicico{
 }
 /*侧边导航栏*/
 aside{
-    overflow: auto;
-border-radius: 10px;
-height: 30vmax;
+  overflow: auto;
+  border-radius: 10px;
+  height: 30vmax;
   width: 5vmax;
   position: fixed;
   z-index: 1;
@@ -208,6 +208,7 @@ height: 30vmax;
   padding: 10px 0;
 }
 .side{
+    font-size: 0.8vmax;
     text-decoration: none;
     font-family: "华文琥珀";
     border-radius: 5px;
@@ -219,6 +220,7 @@ height: 30vmax;
     color: black;
 }
 .end{
+    font-size: 0.8vmax;
     position: absolute;
     bottom: 0;
     font-family: "华文琥珀";
@@ -240,4 +242,3 @@ maodian{
   max-width: 100%;
   max-height: 100%;
 }
-
